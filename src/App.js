@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import Header from './Header';
+import Navbar from './Navbar';
 import Experience from './Experience';
 import Skills from './Skills';
 import Projects from './Projects';
@@ -11,13 +12,14 @@ function App() {
   useEffect(() => {
     WebFont.load({
       google: {
-        families: ['Doto', 'Markazi Text', 'Jersey 10', 'Rock Salt']
+        families: ['Doto', 'Markazi Text', 'Jersey 10']
       }
     });
   }, []);
 
   return (
     <div className="App">
+      <Navbar />
       <Header />
       <Experience />
       <Skills />

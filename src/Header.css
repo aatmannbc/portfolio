@@ -18,9 +18,9 @@ html, body {
 }
 
 .navbar {
-  background: rgba(44, 47, 38, 0.193); /* Semi-transparent background */
+  background: rgba(54, 57, 48, 0.193); /* Semi-transparent background */
   backdrop-filter: blur(10px); /* Blur effect */
-  padding: 10px 20px;
+  padding: 20px 40px; /* Increase padding for larger navbar */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,9 +28,11 @@ html, body {
   top: 0;
   left: 0;
   right: 0;
+  width: calc(100% - 80px); /* Adjust width to account for padding */
   color: #ffffff;
   z-index: 1000; /* Ensure it stays on top */
   transition: top 0.5s ease-in-out;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
 .navbar-left {
@@ -39,6 +41,7 @@ html, body {
   margin-left: 15px;
   color: #ffffff;
   display: flex;
+  font-size: 1.5em; /* Increase text size */
 }
 
 .navbar-right {
@@ -47,17 +50,26 @@ html, body {
   align-items: center;
   margin-right: 15px;
   font-family: 'Doto', sans-serif;
+  font-size: 1.2em; /* Increase text size */
 }
 
 .navbar-right a {
   color: #ffffff;
   text-decoration: none; /* Remove underline */
-  margin: 0 10px; /* Add slight spacing */
+  margin: 0 15px; /* Add slight spacing */
   transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .navbar-right a:hover {
-  color: #464141; /* Change to slight grayish color on hover */
+  color: #b0b0b0; /* Change to slight grayish color on hover */
+}
+
+.navbar.show {
+  top: 0;
+}
+
+.navbar.hide {
+  top: -100px; /* Adjust this value to hide it completely */
 }
 
 .App-header {
@@ -102,15 +114,15 @@ html, body {
 }
 
 .header-image {
-  flex: 1;
+  flex: 0 0 300px; /* Increase the size of the image container */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .header-image img {
-  width: 250px; /* Increase the size of the image */
-  height: 250px; /* Increase the size of the image */
+  width: 300px; /* Increase the size of the image */
+  height: 300px; /* Increase the size of the image */
   border-radius: 50%;
   object-fit: cover;
 }
