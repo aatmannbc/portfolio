@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './App.css';
+import Header from './Header';
+import Experience from './Experience';
+import Skills from './Skills';
+import Projects from './Projects';
+import Contact from './Contact';
+import WebFont from 'webfontloader';
 
 function App() {
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['Doto', 'Markazi Text', 'Jersey 10']
+      }
+    });
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Experience />
+      <Skills />
+      <Projects />
+      <Contact />
     </div>
   );
 }

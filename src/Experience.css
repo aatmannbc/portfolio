@@ -1,0 +1,94 @@
+#experience {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+  font-family: 'Arial', sans-serif; /* Use a cleaner font */
+  width: 100%; /* Ensure it takes the full width */
+}
+
+.experience-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 200px; /* Add a minimum height to ensure consistent sizing */
+    width: 100%; /* Ensure all experience entries take the full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.experience-entry:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.experience-logo {
+  flex: 0 0 120px; /* Increase the size of the logo container */
+  margin-right: 20px;
+}
+
+.experience-logo img {
+  width: 100%; /* Ensure the image fills the container */
+  height: auto;
+  border-radius: 30%; /* Keep the updated border radius */
+  transition: transform 0.3s ease;
+}
+
+.experience-entry:hover .experience-logo img {
+  transform: scale(1.1);
+}
+
+.experience-details {
+  flex: 1;
+}
+
+.experience-details h3 {
+  margin: 0;
+  font-size: 1.2em; /* Make the title smaller */
+  color: #333;
+  font-family: 'Arial', sans-serif; /* Use a cleaner font */
+  text-align: center; /* Align the title to the center */
+}
+
+.company-name {
+  font-weight: bold;
+  color: #666;
+  text-align: center; /* Align the company name to the center */
+}
+
+.duration {
+  font-style: italic;
+  color: #999;
+  text-align: center; /* Align the duration to the center */
+}
+
+.experience-details ul {
+  margin: 10px 0;
+  padding-left: 20px;
+  color: #555;
+  list-style-type: none; /* Remove default list styling */
+}
+
+.experience-details ul li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.experience-details ul li:hover {
+  background-color: #e0e0e0;
+}
