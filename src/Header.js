@@ -17,7 +17,7 @@ function Header() {
           </ul>
         </div>
         <div className="header-image">
-          <img src="/1692042198968.jpeg" alt="Aatmann" />
+          <img src={process.env.PUBLIC_URL + "/1692042198968.jpeg"} alt="Aatmann" />
         </div>
       </div>
     </header>
