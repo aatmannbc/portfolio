@@ -132,8 +132,9 @@ html, body {
   overflow: hidden; /* Ensures the text is hidden until typed */
   border-right: .10em solid white; /* The caret */
   white-space: nowrap; /* Keeps the text on a single line */
-  animation: typing 3.5s steps(20, end), blink-caret .75s step-end infinite;
+  animation: typing 5s steps(40, end), blink-caret 1s step-end infinite; /* Slower typing animation */
   font-family: 'Doto', sans-serif;
+  max-width: fit-content; /* Prevents overflow */
 }
 
 @keyframes typing {

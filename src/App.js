@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     WebFont.load({
       google: {
-        families: ['Doto', 'Markazi Text', 'Jersey 10']
+        families: ['Doto', 'Markazi Text', 'Jersey 10', 'Rock Salt']
       }
     });
   }, []);
