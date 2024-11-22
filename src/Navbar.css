@@ -22,7 +22,7 @@
   margin-left: 15px;
   color: #ffffff;
   display: flex;
-  font-size: 1.5em; /* Increase text size */
+  font-size: 1.75em; /* Increase text size */
 }
 
 .navbar-right {
@@ -31,7 +31,7 @@
   align-items: center;
   margin-right: 15px;
   font-family: 'Doto', sans-serif;
-  font-size: 1.2em; /* Increase text size */
+  font-size: 1.75em; /* Increase text size */
 }
 
 .navbar-right a {
@@ -42,7 +42,7 @@
 }
 
 .navbar-right a:hover {
-  color: #b0b0b0; /* Change to slight grayish color on hover */
+  color: #433e3eda; /* Change to slight grayish color on hover */
 }
 
 .navbar.show {

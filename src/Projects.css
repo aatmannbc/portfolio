@@ -1,0 +1,93 @@
+#projects {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+.project {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.project p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.toggle-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #45a049;
+}
+
+.more-info {
+  margin-top: 20px;
+}
+
+.more-info h4 {
+  font-size: 1.3em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.more-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.more-info ul li {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4CAF50;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #45a049;
+}
+
+.project-gif {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.project-gif img {
+  max-width: 100%;
+  border-radius: 8px;
+}
