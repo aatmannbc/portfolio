@@ -12,36 +12,26 @@ function Projects() {
     <section id="projects">
       <h2>Projects</h2>
       <div className="project">
-        <h3>Project 1: Flixter (Part-2)</h3>
+        <h3>Flixter</h3>
         <p>
           Flixter is a movie browsing app that allows users to browse TV Shows.
-          <br />
-          <strong>Submitted by:</strong> Aatmann B C
-          <br />
-          <strong>Time spent:</strong> 6 hours spent in total
         </p>
         <button onClick={toggleShowMore} className="toggle-button">
           {showMore ? 'Show Less' : 'Show More'}
         </button>
         {showMore && (
           <div className="more-info">
-            <h4>Required Features</h4>
+            <h4>Features</h4>
             <ul>
               <li>Choose any endpoint on The MovieDB API except now_playing</li>
               <li>Chosen Endpoint: trending/tv</li>
               <li>Make a request to your chosen endpoint and implement a RecyclerView to display all entries</li>
               <li>Use Glide to load and display at least one image per entry</li>
               <li>Click on an entry to view specific details about that entry using Intents</li>
-            </ul>
-            <h4>Optional Features</h4>
-            <ul>
-              <li>Add another API call and RecyclerView that lets the user interact with different data.</li>
+              <li>Add another API call and RecyclerView that lets the user interact with different data</li>
               <li>Add rounded corners to the images using the Glide transformations</li>
               <li>Implement a shared element transition when user clicks into the details of a movie</li>
-            </ul>
-            <h4>Additional Features</h4>
-            <ul>
-              <li>Added TV Show air date to the details.</li>
+              <li>Added TV Show air date to the details</li>
             </ul>
             <a href="https://github.com/aatmannbc/Flixster" className="project-link">View Project</a>
             <div className="project-gif">

@@ -1,0 +1,210 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; /* Ensure vertical scrolling */
+  position: relative;
+}
+
+.navbar {
+  background: rgba(54, 57, 48, 0.193); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  padding: 20px 40px; /* Increase padding for larger navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%; /* Ensure it stretches to the whole top space */
+  color: #ffffff;
+  z-index: 1000; /* Ensure it stays on top */
+  transition: top 0.5s ease-in-out;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.navbar-left {
+  font-family: 'Doto', sans-serif;
+  font-weight: bold;
+  margin-left: 15px;
+  color: #ffffff;
+  display: flex;
+  font-size: 1.5em; /* Increase text size */
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  font-family: 'Doto', sans-serif;
+  font-size: 1.2em; /* Increase text size */
+}
+
+.navbar-right a {
+  color: #ffffff;
+  text-decoration: none; /* Remove underline */
+  margin: 0 15px; /* Add slight spacing */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar-right a:hover {
+  color: #b0b0b0; /* Change to slight grayish color on hover */
+}
+
+.navbar.show {
+  top: 0;
+}
+
+.navbar.hide {
+  top: -100px; /* Adjust this value to hide it completely */
+}
+
+.App-header {
+  background-image: url('/Users/aatmannbc/Desktop/Portfolio/portfolio/public/pexels-codioful-6985048.jpg'); /* Ensure the path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #ffffff;
+  padding-top: 60px; /* Ensure content is not hidden behind the navbar */
+  margin: 0;
+  position: relative;
+  transition: top 0.3s ease;
+  z-index: 10;
+}
+
+.App-header.show {
+  top: 0;
+}
+
+.App-header.hide {
+  top: -100px; /* Adjust this value to hide it completely */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-text {
+  flex: 1;
+  text-align: left;
+}
+
+.header-image {
+  flex: 0 0 300px; /* Increase the size of the image container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-image img {
+  width: 300px; /* Increase the size of the image */
+  height: 300px; /* Increase the size of the image */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.typing-animation {
+  display: inline-block; /* Ensures the text and caret stay on the same line */
+  overflow: hidden; /* Ensures the text is hidden until typed */
+  border-right: .10em solid white; /* The caret */
+  white-space: nowrap; /* Keeps the text on a single line */
+  animation: typing 5s steps(40, end), blink-caret 1s step-end infinite; /* Slower typing animation */
+  font-family: 'Doto', sans-serif;
+  max-width: fit-content; /* Prevents overflow */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+.hand-shake {
+  display: inline-block;
+  animation: shake 0.5s ease-in-out 2s 6; /* Shake for 3 seconds after a delay of 2 seconds */
+}
+
+@keyframes shake {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+}
+
+.emoji-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.emoji-list li {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .App-header {
+    padding-top: 20px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    width: 90%; /* Adjust width for mobile */
+  }
+
+  .header-text {
+    text-align: center;
+    font-size: 1.5em; /* Adjust font size for mobile */
+  }
+
+  .header-image {
+    margin-top: 20px;
+  }
+
+  .main-heading {
+    font-size: 1.5em; /* Adjust font size for mobile */
+    padding: 0 10px; /* Add padding to prevent overflow */
+  }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar-left, .navbar-right {
+    font-size: 1em;
+  }
+
+  .navbar-right a {
+    margin: 0 5px;
+  }
+}

@@ -28,7 +28,7 @@ html, body {
   top: 0;
   left: 0;
   right: 0;
-  width: calc(100% - 80px); /* Adjust width to account for padding */
+  width: 100%; /* Ensure it stretches to the whole top space */
   color: #ffffff;
   z-index: 1000; /* Ensure it stays on top */
   transition: top 0.5s ease-in-out;
@@ -111,6 +111,8 @@ html, body {
 .header-text {
   flex: 1;
   text-align: left;
+  font-size: auto;
+  font-family: 'Rock Salt', sans-serif;
 }
 
 .header-image {
@@ -134,7 +136,7 @@ html, body {
   white-space: nowrap; /* Keeps the text on a single line */
   animation: typing 5s steps(40, end), blink-caret 1s step-end infinite; /* Slower typing animation */
   font-family: 'Doto', sans-serif;
-  max-width: fit-content; /* Prevents overflow */
+  max-width: 100%; /* Prevents overflow */
 }
 
 @keyframes typing {
@@ -168,12 +170,58 @@ html, body {
 .emoji-list li {
   margin-bottom: 5px;
   font-size: 1.2em;
-  font-family: 'Markazi Text';
+  font-family: 'Ubuntu', sans-serif;
 }
 
-.h1-intro {
-  font-family: 'Rock Salt', sans-serif;
-  font-size: 1em;
-  margin: 0;
-  padding: 0;
+.intro-heading {
+  font-size: 1em; /* Adjust font size as needed */
+  color: #ffffff; /* Adjust color as needed */
+  margin-top: 10px; /* Add margin as needed */
+}
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .App-header {
+    padding-top: 20px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    width: 90%; /* Adjust width for mobile */
+  }
+
+  .header-text {
+    text-align: center;
+    font-size: 1.2em; /* Adjust font size for mobile */
+    
+  }
+
+  .header-image {
+    margin-top: 20px;
+    width: 200px; /* Adjust size for mobile */
+    height: 200px; /* Adjust size for mobile */
+  }
+
+  .header-image img {
+    width: 100%; /* Ensure image fits container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .main-heading {
+    font-size: 1.2em; /* Adjust font size for mobile */
+    padding: 0 10px; /* Add padding to prevent overflow */
+  }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar-left, .navbar-right {
+    font-size: 1em;
+  }
+
+  .navbar-right a {
+    margin: 0 5px;
+  }
+
 }

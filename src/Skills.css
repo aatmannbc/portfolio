@@ -8,6 +8,7 @@
   margin-bottom: 20px;
   font-size: 2em;
   color: #333;
+  font-family: 'Rock Salt', sans-serif;
 }
 
 #skills ul {
@@ -28,9 +29,27 @@
 }
 
 #skills li span {
-  flex: 1;
-  font-size: 1.2em;
-  color: #333;
+  flex: 0 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-level {
+  display: flex;
+  gap: 5px;
+}
+
+.skill-block {
+  width: 20px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.skill-block.filled {
+  background-color: #000; /* Change to black */
 }
 
 .slider {
@@ -56,7 +75,7 @@
   appearance: none;
   width: 20px;
   height: 20px;
-  background: #4CAF50; /* Match the thumb color to the website theme */
+  background: #000000; /* Match the thumb color to the website theme */
   cursor: not-allowed; /* Indicate that the slider is not changeable */
   border-radius: 50%;
 }
@@ -64,7 +83,27 @@
 .slider::-moz-range-thumb {
   width: 20px;
   height: 20px;
-  background: #4CAF50; /* Match the thumb color to the website theme */
+  background: #000000; /* Match the thumb color to the website theme */
   cursor: not-allowed; /* Indicate that the slider is not changeable */
   border-radius: 50%;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  #skills li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #skills li span {
+    margin-bottom: 10px;
+  }
+
+  .skill-level {
+    justify-content: center;
+  }
+
+  .slider {
+    margin-left: 0;
+  }
 }

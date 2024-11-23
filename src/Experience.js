@@ -29,7 +29,7 @@ function Experience() {
           <p className="company-name">Goldman Sachs Market Madness</p>
           <p className="duration">Jan 2024 – Apr 2024</p>
           <ul>
-            <li>Led a 5-person data analysis team, developing an innovative marketing proposal for Nike’s collaboration with Apple Music, projected to generate $400 million in additional revenue.</li>
+            <li>Led a 5-person data analysis team, developing an innovative marketing proposal for Nike’s collaboration with Apple Music.</li>
             <li>Leveraged Scikit-learn to analyze 10 years of market collaboration data, identifying key patterns that improved decision-making by 30% in the campaign strategy.</li>
             <li>Delivered a comprehensive data-driven report that contributed to securing second place in the competition's first round.</li>
           </ul>

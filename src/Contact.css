@@ -1,0 +1,64 @@
+#contact {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-family: 'Rock Salt', sans-serif;
+  color: #333;
+}
+
+#contact p {
+  font-size: 1.2em;
+  color: #666;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #3f473f;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Add space between icons */
+}
+
+.contact-icons a {
+  color: #000000; /* Change to black */
+  font-size: 2em; /* Increase icon size */
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #3f473f; /* Darker shade of black */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  #contact {
+    padding: 15px;
+  }
+
+  #contact h2 {
+    font-size: 1.5em;
+  }
+
+  #contact p {
+    font-size: 1em;
+  }
+
+  .contact-icons a {
+    font-size: 1.5em; /* Adjust icon size for mobile */
+  }
+}

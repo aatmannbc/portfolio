@@ -1,12 +1,20 @@
 import React from 'react';
+import './Contact.css'; // Make sure to create and import the CSS file
 
 function Contact() {
   return (
     <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: aatmann.bc@bison.howard.edu</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/aatmannbc/">linkedin.com/in/aatmannbc</a></p>
-      <p>GitHub: <a href="https://github.com/aatmannbc">github.com/aatmannbc</a></p>
+      <div className="contact-icons">
+        <a href="mailto:aatmann.bc@bison.howard.edu" target="_blank" rel="noopener noreferrer">
+          <i className="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/aatmannbc/" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/aatmannbc" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-github"></i>
+        </a>
+      </div>
     </section>
   );
 }
